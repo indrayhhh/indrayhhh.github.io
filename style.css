@@ -6,3 +6,26 @@
     padding-bottom: 20%;
     color:#FFF;
 }
+
+.lingkaran {
+  display: inline-block;
+  border-radius: 50%;
+  width: 150px;
+  margin: auto;
+  height: 150px;
+  color: #FFF;
+  background-color: #dc3545;  
+}
+
+.lingkaran i {
+    position: relative;
+    top: 30px;
+}
+
+.kontak{
+    background: url(https://wallpaperaccess.com/full/1867010.jpg) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 20%;
+    padding-top: 20%;
+    color: #FFF;
+}
