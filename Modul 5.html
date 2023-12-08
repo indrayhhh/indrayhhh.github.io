@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Perpustakaan SUKA BACA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .col {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .table-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Selamat Datang di Website Perpustakaan SUKA BACA</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kategori</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Layanan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Peminjaman Buku</a>
+                        <a class="dropdown-item" href="#">Pengembalian Buku</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Daftar Anggota</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="col">
+            <!-- Kolom I -->
+            <p>Isi dari kolom ini dapat berisi deskripsi atau ucapan selamat datang.</p>
+        </div>
+
+        <div class="col">
+            <!-- Kolom II -->
+            <div class="table-container">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Judul Buku</th>
+                            <th>Pengarang</th>
+                            <th>Tahun Terbit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Harry Potter</td>
+                            <td>J.K. Rowling</td>
+                            <td>1997</td>
+                        </tr>
+                        <!-- Tambahkan baris data sesuai kebutuhan -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="col">
+            <!-- Kolom III -->
+            <form>
+                <div class="form-group">
+                    <label for="judulBuku">Judul Buku:</label>
+                    <input type="text" class="form-control" id="judulBuku" name="judulBuku" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="pengarang">Pengarang:</label>
+                    <input type="text" class="form-control" id="pengarang" name="pengarang" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="tahunTerbit">Tahun Terbit:</label>
+                    <input type="number" class="form-control" id="tahunTerbit" name="tahunTerbit" required>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <button id="btnPameran" onclick="pameranBuku()">Tampilkan Pameran Buku</button>
+
+    <script>
+        // Menampilkan data dengan console.log()
+        console.log("Selamat Datang di Website Perpustakaan SUKA BACA");
+
+        // Menampilkan data dengan alert()
+        alert("Selamat Datang di Website Perpustakaan SUKA BACA");
+
+        // Menampilkan data di elemen HTML dengan document.getElementById()
+        document.getElementById("judulBuku").value = "Harry Potter";
+        document.getElementById("pengarang").value = "J.K. Rowling";
+        document.getElementById("tahunTerbit").value = "1997";
+
+        // Implementasi variabel, operator, struktur kondisi, dan struktur perulangan
+        var judulBuku = "Harry Potter";
+        var pengarang = "J.K. Rowling";
+        var tahunTerbit = 1997;
+
+        var jumlahBuku = 5;
+        var totalHalaman = jumlahBuku * 300;
+
+        if (jumlahBuku > 0) {
+            document.write("<p>Ada buku yang tersedia.</p>");
+        } else {
+            document.write("<p>Maaf, stok buku habis.</p>");
+        }
+
+        document.write("<ul>");
+        for (var i = 1; i <= jumlahBuku; i++) {
+            document.write("<li>" + judulBuku + " - " + pengarang + "</li>");
+        }
+        document.write("</ul>");
+
+        // Implementasi JavaScript HTML DOM event "Pameran Buku"
+        function pameranBuku() {
+            alert("Pameran Buku: Temukan koleksi buku terbaru kami!");
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

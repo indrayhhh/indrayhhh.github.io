@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NO SYSTEM IS SAFE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+      <!-- navigasi -->
+    <nav 
+      class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Perpustakaan Indra</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" text-right id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Galeri
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="Modul 1.html">Modul 1</a></li>
+                    <li><a class="dropdown-item" href="Modul 2.html">Modul 2</a></li>
+                    <li><a class="dropdown-item" href="Modul 3.html">Modul 3</a></li>
+                    <li><a class="dropdown-item" href="Modul 4.html">Modul 4</a></li>
+                    <li><a class="dropdown-item" href="Modul 5.html">Modul 5</a></li>
+                    <li><a class="dropdown-item" href="Modul 6.html">Modul 6</a></li>
+                    <li><a class="dropdown-item" href="Modul 7.html">Modul 7</a></li>
+                    <li><a class="dropdown-item" href="Modul 8.html">Modul 8</a></li>
+                  </ul>
+              <li class="nav-item">
+                <a class="nav-link" href="#kontak">Kontak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://indra.fantasticfive.xyz/index.php?p=member&sec=title_basket">Masuk</a>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <title>Penjelasan Tipe CSS</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              max-width: 800px;
+              margin: 0 auto;
+              line-height: 1.6;
+          }
+          h1, h2 {
+              color: #3498db;
+          }
+          h3 {
+              color: #2ecc71;
+          }
+          p {
+              margin-bottom: 20px;
+          }
+          code {
+              background-color: #f8f8f8;
+              padding: 2px 4px;
+              border: 1px solid #ddd;
+              font-family: monospace;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>Penjelasan Tipe CSS</h1>
+  
+      <h2>1. Inline Style Sheet</h2>
+      <p>
+          CSS inline ditempatkan langsung pada elemen HTML menggunakan atribut <code>style</code>.
+          Contoh penggunaan inline style pada elemen <code>&lt;p&gt;</code> untuk mengubah warna teks:
+      </p>
+      <pre>
+          <code>&lt;p style="color: red;"&gt;Ini teks berwarna merah&lt;/p&gt;</code>
+      </pre>
+  
+      <h2>2. Internal Style Sheet</h2>
+      <p>
+          CSS internal ditulis di dalam tag <code>&lt;style&gt;</code> di dalam tag <code>&lt;head&gt;</code> HTML.
+          Berikut contohnya dengan mengubah warna teks <code>&lt;h2&gt;</code>:
+      </p>
+      <pre>
+          <code>
+              &lt;head&gt;
+                  &lt;style&gt;
+                      h2 {
+                          color: green;
+                      }
+                  &lt;/style&gt;
+              &lt;/head&gt;
+          </code>
+      </pre>
+  
+      <h2>3. Eksternal Style Sheet</h2>
+      <p>
+          CSS eksternal disimpan dalam file terpisah dengan ekstensi <code>.css</code>.
+          File CSS ini kemudian dihubungkan ke halaman HTML menggunakan tag <code>&lt;link&gt;</code>.
+          Contoh penggunaan di dalam file <code>style.css</code>:
+      </p>
+      <pre>
+          <code>
+              /* style.css */
+              body {
+                  background-color: #f2f2f2;
+              }
+          </code>
+      </pre>
+      <pre>
+          <code>
+              &lt;head&gt;
+                  &lt;link rel="stylesheet" href="style.css"&gt;
+              &lt;/head&gt;
+          </code>
+      </pre>
+
+      <h2>4. Paragraf Mengenai HTML</h2>
+    <p id="html-paragraph">
+        HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat struktur dan konten dari halaman web.
+        Dengan HTML, kita dapat menentukan judul, paragraf, tautan, gambar, dan elemen-elemen lainnya yang membentuk halaman web.
+        HTML memberikan dasar untuk membangun halaman web dengan mengorganisir dan menyusun informasi dengan cara yang dapat diinterpretasi oleh browser.
+    </p>
+
+    <h2>5. Paragraf Mengenai CSS</h2>
+    <p id="css-paragraph">
+        CSS (Cascading Style Sheets) adalah bahasa gaya yang digunakan untuk mempercantik dan mengatur tampilan elemen-elemen HTML.
+        Dengan CSS, kita dapat mengubah warna, ukuran, tata letak, dan gaya elemen, memberikan desain yang menarik dan konsisten pada halaman web.
+        CSS bekerja secara bersamaan dengan HTML, memisahkan struktur dan tata letak dari presentasi visual sehingga memudahkan pemeliharaan dan perubahan desain.
+    </p>
+  <div class="container text-center pt-5 pb-5">
+    All Right Reserved &copy; 2023
+  </div>  
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
